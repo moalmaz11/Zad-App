@@ -1,0 +1,216 @@
+/* إعدادات عامة وتناسق الألوان */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+body {
+    background-color: #f4f7f5;
+    color: #2d3748;
+    line-height: 1.7;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* الهيدر */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #047857; /* أخضر زمردي عميق */
+}
+
+.logo-img {
+    height: 40px;
+    border-radius: 8px;
+}
+
+.btn-nav {
+    background-color: #047857;
+    color: white;
+    text-decoration: none;
+    padding: 8px 22px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-nav:hover {
+    background-color: #065f46;
+}
+
+/* القسم الرئيسي (Hero) */
+.hero {
+    background: linear-gradient(135deg, #e6f4ea 0%, #f0fdfa 100%);
+    padding: 60px 0 90px 0;
+    text-align: center;
+}
+
+.hero-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.hero-content h1 {
+    font-size: 38px;
+    color: #065f46;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #4a5568;
+    max-width: 750px;
+    margin: 0 auto 35px auto;
+}
+
+/* زرار التحميل */
+.download-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.btn-download {
+    background-color: #10b981; 
+    color: white;
+    text-decoration: none;
+    padding: 16px 38px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 10px 15px -3px rgba(16, 185, 129, 0.3);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-download:hover {
+    background-color: #059669;
+    transform: translateY(-2px);
+}
+
+.icon {
+    display: inline-block;
+}
+
+.file-info {
+    font-size: 14px !important;
+    color: #718096 !important;
+}
+
+/* قسم المميزات */
+.features {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 32px;
+    color: #0f172a;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.features h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #10b981;
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.feature-card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+    border: 1px solid #e6f4ea;
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    color: #065f46;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.feature-card p {
+    color: #718096;
+    font-size: 15px;
+    text-align: justify;
+}
+
+/* الفوتر */
+footer {
+    background-color: #065f46;
+    color: #e6f4ea;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* التوافق التام مع الموبايل */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 28px;
+        padding: 0 10px;
+    }
+    .hero-content p {
+        font-size: 16px;
+        padding: 0 15px;
+    }
+    .btn-download {
+        width: 90%;
+        justify-content: center;
+    }
+    .features-grid {
+        padding: 0 15px;
+    }
+}
