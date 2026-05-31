@@ -1,0 +1,25 @@
+{
+  "name": "zad-app",
+  "version": "1.0.0",
+  "description": "تطبيق زادُ الخَيْر - رفيقك الإيماني اليومي",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo \"Static site - no build needed\"",
+    "test": "echo \"No tests specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moalmaz11/Zad-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moalmaz11/Zad-App/issues"
+  },
+  "homepage": "https://github.com/moalmaz11/Zad-App#readme",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  }
+}
