@@ -5,8 +5,9 @@
   "main": "index.html",
   "scripts": {
     "dev": "npx serve .",
-    "build": "npm run build:speed-insights",
-    "build:speed-insights": "npx esbuild speed-insights.js --bundle --format=iife --outfile=speed-insights.bundle.js",
+    "build": "npm run build:speed-insights && npm run build:analytics",
+    "build:speed-insights": "esbuild speed-insights.js --bundle --format=iife --outfile=speed-insights.bundle.js",
+    "build:analytics": "esbuild analytics.js --bundle --format=iife --outfile=analytics.bundle.js",
     "test": "echo \"No tests specified\""
   },
   "repository": {
@@ -21,6 +22,7 @@
   },
   "homepage": "https://github.com/moalmaz11/Zad-App#readme",
   "dependencies": {
+    "@vercel/analytics": "^1.4.1",
     "@vercel/speed-insights": "^2.0.0"
   },
   "devDependencies": {
